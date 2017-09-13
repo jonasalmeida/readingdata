@@ -13,8 +13,11 @@ jQuery.getJSON('https://health.data.ny.gov/resource/5q8c-d6xq.json')
     })
     avg(x)
     // data in x, ready for stats
+    var wk = document.getElementById('work')
+    wk.innerHTML='Number of observartions = '+x.length+'<br>Average value : '+avg(x)
+    wk.style.color='blue'
 
-    debugger
+    //debugger
 })
 
 
